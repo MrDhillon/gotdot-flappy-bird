@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://djs1hw82bxny7"]
+
+[ext_resource type="PackedScene" uid="uid://b1sn45l6v65ch" path="res://Scenes/bird.tscn" id="1_trm13"]
+
+[node name="main" type="Node"]
+
+[node name="Bird" parent="." instance=ExtResource("1_trm13")]
+position = Vector2(-1, -2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
