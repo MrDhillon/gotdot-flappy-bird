@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://djs1hw82bxny7"]
+[gd_scene load_steps=3 format=3 uid="uid://djs1hw82bxny7"]
 
+[ext_resource type="Texture2D" uid="uid://cu2cbqw8upou7" path="res://assets/background-day.png" id="1_g8u5x"]
 [ext_resource type="PackedScene" uid="uid://b1sn45l6v65ch" path="res://Scenes/bird.tscn" id="1_trm13"]
 
 [node name="main" type="Node"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_g8u5x")
 
 [node name="Bird" parent="." instance=ExtResource("1_trm13")]
 position = Vector2(-1, -2)
